@@ -1,0 +1,18 @@
+python -m uvicorn app.main:app --reload --host 127.0.0.1 --port 8002
+3e17b0b6ff4246fca400746bd5ffd24c
+
+ဒီလိုလုပ်တာက Sensei ပြောတဲ့ **ပုံစံဆင်တူတာတစ်ခုတည်းနဲ့ false positive မဖြစ်စေဖို့** ဖြစ်တယ်။
+
+---
+
+## နောက်တစ်ဆင့်
+
+အခုဆင်တူတာတစ်ခုတည်းနဲ့ false positiလုပ်ပြီး test result ကိုကြည့်မယ်။
+
+```cmd
+
+cd C:\Users\naing\Desktop\Trademark-conflict\backend
+
+python -m py_compile app\services\logo_match\exact_text.py
+
+uvicorn app.main:app --reload --port 8002
